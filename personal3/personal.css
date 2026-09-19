@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+html {
+    background-image: url("back_pic.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body {
+    background-color: #F1F8E9;
+    color: #1B1B1B;
+    font-family: Verdana, Geneva, sans-serif;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-shadow: 4px 6px 5px gray;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+/* Navigation list */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Each navigation item */
+nav li {
+    display: block;
+    width: 20%;
+    float: left;
+}
+
+/* Navigation links */
+nav a {
+    display: block;
+    background-color: #2E7D32;
+    line-height: 2.8em;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+/* Navigation hover effect */
+nav a:hover {
+    background-color: #C8E6C9;
+    color: #1B3A1B;
+}
+
+main {
+    padding: 20px;
+    margin-top: 35px;
+}
+
+main > img {
+    padding: 25px;
+    width: 25%;
+    float: right;
+}
+
+header img {
+    width: 100%;
+}
+
+body > footer {
+    background-color: #2E7D32;
+    color: darkcyan;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 3em;
+    font-weight: bold;
+    clear: both;
+}
+
+ul {
+    list-style-type: square;
+}
+
+
+/* Mobile layout */
+@media only screen and (max-width:768px) {
+
+    html {
+        background-color: hsl(200, 20%, 47%);
+    }
+
+    body {
+        width: 100%;
+        margin: 0;
+    }
+
+    img {
+        float: none;
+        width: 90%;
+    }
+
+    nav li {
+        float: none;
+        width: 100%;
+        display: block;
+    }
+
+    nav a {
+        border-bottom: solid black 1px;
+    }
+}
+
+
+/* Desktop layout */
+@media only screen and (min-width:769px) {
+
+    html {
+        background:
+            hsl(200, 20%, 47%)
+            url(back_pic.jpg)
+            center center / cover
+            no-repeat
+            fixed;
+    }
+
+    body {
+        width: 100%;
+    }
+}
